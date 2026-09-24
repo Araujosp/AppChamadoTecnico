@@ -11,13 +11,101 @@
         android:id="@+id/toolbarTop"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/black"
+        app:titleTextColor="@color/white"
         app:title="Chamado Técnico | Sobre"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         />
 
+    <!--   Numero  -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Numero"
+        app:layout_constraintTop_toBottomOf="@id/toolbarTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Contato -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutContato"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Email de contato"
+        app:layout_constraintTop_toBottomOf="@id/layoutNumero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtContato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutContato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/black"
+        />
+
+<TextView
+    android:id="@+id/textoSobre"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/btnEnviar"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:text="O Chamado Técnico é uma aplicação desenvolvida
+    para facilitar o registro e acompanhamento de solicitações de
+    suporte técnico. O sistema permite cadastrar chamados de forma
+    simples e organizada, centralizando as informações para facilitar
+    o atendimento."
+    android:textSize="18sp"
+    android:layout_marginTop="80dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:textColor="@color/black"
+    />
+
+    <TextView
+        android:id="@+id/txtDesenvolvido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="desenvolvido por @Araujo"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

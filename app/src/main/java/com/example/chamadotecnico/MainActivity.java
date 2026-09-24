@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
         MaterialToolbar toolbar = findViewById(R.id.toolbarTop); //pegamos o material xml e linkamos ao java
         setSupportActionBar(toolbar); // esse toolbar vai ser usado para navegar entre as telas
 
+        Button btnAcessarConf = findViewById(R.id.btnAcessaConf);
+        btnAcessarConf.setOnClickListener(v -> {
+           Intent intent = new Intent (MainActivity.this, ConfiguracoesActivity.class);
+           startActivity(intent);
+        });
 
     }
 

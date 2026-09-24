@@ -11,11 +11,13 @@
         android:id="@+id/toolbarTop"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        app:title="Chamado Técnico | Cadastro"
+        android:background="@color/black"
+        app:titleTextColor="@color/white"
+        app:title="Chamado Técnico | Configurações"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         />
 
 

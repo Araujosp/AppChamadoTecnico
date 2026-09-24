@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -31,7 +32,25 @@ public class SobreActivity extends AppCompatActivity {
         MaterialToolbar toolbar = findViewById(R.id.toolbarTop); //pegamos o material xml e linkamos ao java
         setSupportActionBar(toolbar); // esse toolbar vai ser usado para navegar entre as telas
 
+        Button btnEnviar = findViewById(R.id.btnEnviar);
 
+        btnEnviar.setOnClickListener(v -> { //quando o elemento btnEnviar for clicado:
+            Toast.makeText(SobreActivity.this, //vai aparecer após apertar o botão se der certo
+                            "Contato registrado em nosso banco",
+                            Toast.LENGTH_SHORT)
+                    .show();
+        });
+
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish(); //fecha a activity que estavamos e volta para mim
+        return true;
     }
 
     //definindo as opções do menu

@@ -11,11 +11,13 @@
         android:id="@+id/toolbarTop"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/black"
+        app:titleTextColor="@color/white"
         app:title="Chamado Técnico"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         />
 
     <!-- EQUIPAMENTO -->
@@ -87,7 +89,8 @@
         android:text="ABRIR CHAMADO"
         app:layout_constraintTop_toBottomOf="@id/layoutEmail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/black"/>
 
     <Button
         android:id="@+id/btnAcessaConf"
@@ -99,6 +102,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="15dp"
+        android:backgroundTint="@color/black"
         />
 
 
