@@ -34,7 +34,7 @@ public class ConfiguracoesActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        finish(); //fecha a activity que estavamos e volta para mim
+        finish(); //fecha a activity que estavamos e volta para main
         return true;
     }
 
