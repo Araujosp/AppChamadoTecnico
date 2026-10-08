@@ -5,4 +5,10 @@
         android:id="@+id/homeFragment"
         android:title="Home"
         android:icon="@android:drawable/ic_menu_view"/>
+
+    <item
+        android:id="@+id/perfilFragment"
+        android:title="Perfil"
+        android:icon="@android:drawable/ic_menu_myplaces" />
+
 </menu>
